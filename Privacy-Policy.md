@@ -1,75 +1,55 @@
-# Privacy Policy — Caramel Project
+# Privacy Policy
 
-**Last Updated:** November 5, 2026
+**Effective Date:** November 6, 2026  
+**Application:** Caramel Project ("Caramel", "we", "us", or "our")
 
-This Privacy Policy explains what data is collected, stored, and processed by Discord bots and applications operated under **Caramel Project** (collectively referred to as "the Bot" or "the Service"), in accordance with the [Discord Developer Policy](https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy).
-
----
-
-## 1. Data We Collect and Store
-
-The Bot only collects and stores the minimum Discord data necessary to provide its moderation, security, and utility features. Depending on which features a server enables, the Bot may store:
-
-| Feature | Data Stored | Storage File |
-| :--- | :--- | :--- |
-| **Warnings (`/warn`)** | Guild ID, target User ID, moderator tag, warning reason, and timestamp | `warns.json` |
-| **Giveaways (`/giveaway`)** | Guild ID, Channel ID, Message ID, Host User ID, prize text, end time, participant User IDs, and excluded User/Role IDs | `giveaways.json` |
-| **Autoresponders (`/autoresponder`)** | Guild ID, configured trigger phrases, response text, and restricted Channel IDs | `autoresponders.json` |
-| **Sticky Messages (`/sticky`)** | Guild ID, Channel IDs, last posted Message IDs, and sticky message content | `sticky.json` |
-| **Honeypot (`/honeypot`)** | Guild ID, monitored Channel ID, panel Message ID, and moderation action logs (triggering Message ID, User ID, timestamp, and action status) | `honeypot.json`, `honeypot-actions.json` |
-| **Verification (`/verify`)** | Guild ID, verification Channel ID, and panel Message ID | `verify.json` |
-| **Script Panel (`/script`)** | Guild ID, Channel ID, and active panel Message ID | `script-panels.json` |
-| **Temporary Whitelist (`/whitelist`)** | Guild ID, User ID, granted Role ID, duration, and expiration timestamp | `whitelist.json` |
-| **AFK Status (`/afk`)** | Guild ID, User ID, custom AFK message, timestamp, and original nickname | `afk.json` |
-| **Channel Lock (`/lock`)** | Guild ID, Channel ID, and previous `@everyone` permission overwrite bitfields | `lockStates.json` |
-| **24/7 Voice Stay (`/alive`)** | Guild ID and target Voice Channel ID | `voiceStay.json` |
+Caramel Project is dedicated to safeguarding the privacy of our users and communities. This Privacy Policy outlines what information the bot processes, how that data is stored, and your rights regarding data retention.
 
 ---
 
-## 2. Gateway Intents & Transient Data Processing
+## 1. Information We Collect
+To provide automated moderation, support ticketing, temporary voice channels, and server management, Caramel Project processes the following standard Discord identifiers:
 
-To operate properly, the Bot uses the following Discord Gateway Intents:
-1. **Message Content Intent (`GatewayIntentBits.MessageContent`):**
-   - Used in real time solely to detect prefix commands (default `.`), match configured `/autoresponder` triggers, process `/afk` mentions, and enforce `/honeypot` channel protection.
-   - **The Bot does NOT log, archive, or store general chat messages or conversation histories.**
-2. **Guild Members Intent (`GatewayIntentBits.GuildMembers`):**
-   - Used to resolve member profiles for `/whois`, `/avatar`, moderation commands, role hierarchy validation, and temporary `/whitelist` role management.
-3. **Guild Voice States Intent (`GatewayIntentBits.GuildVoiceStates`):**
-   - Used to maintain and restore 24/7 voice channel connections configured via `/alive`.
+- **Discord Identifiers:** User IDs, Guild (Server) IDs, Channel IDs, and Role IDs necessary to map configurations and execute commands.
+- **Support Ticket Data:** Ticket channel records, creator User IDs, issue categories, subjects, and generated HTML message history archives for administrative record-keeping.
+- **Moderation History:** Warning counts, disciplinary reasons, and internal moderator notes associated with specific User IDs.
+- **Temporary State Data:** AFK status messages, sticky message identifiers, and voice stay preferences.
 
 ---
 
-## 3. How We Use Information
-
-Data collected by the Bot is used exclusively for:
-- Executing commands requested by server administrators, moderators, and members.
-- Persisting server configurations (such as active giveaways, sticky messages, autoresponders, voice sessions, and role expirations) across bot restarts.
-- Displaying server-specific moderation statistics (such as honeypot ban counts and member warning records).
+## 2. Information We DO NOT Collect
+- We **do not** collect personal real-world identities, real names, email addresses, phone numbers, home addresses, or financial/payment information.
+- We **do not** log or record audio conversations inside voice channels or temporary voice lounges.
+- We **do not** store private chat messages outside of explicitly requested ticket transcripts and operational security filters (AutoMod / Honeypot).
 
 ---
 
-## 4. Data Sharing and Third Parties
-
-- **No Selling or Sharing:** Caramel Project **never** sells, rents, trades, or shares any user or server data with third parties.
-- Data is accessed only by the Bot's automated systems and authorized **Caramel Project** developers for maintenance and debugging purposes.
-
----
-
-## 5. Data Retention and Deletion
-
-Most stored data can be cleared directly by server administrators at any time using built-in commands:
-- **Warnings:** `/warn reset`
-- **Autoresponders:** `/autoresponder delete` or `/autoresponder clear`
-- **Sticky Messages:** `/sticky delete` or `/sticky clear`
-- **Honeypot Configuration:** `/honeypot reset`
-- **Whitelist Records:** `/whitelist reset`
-- **Voice Session:** `/leave`
-- **AFK Status:** Automatically removed when the user sends a message or runs `/afk` again.
-
-Server owners may also request complete removal of all stored guild data by removing the Bot from their server or contacting the **Caramel Project** developer team.
+## 3. How We Use Collected Data
+Collected data is used strictly to fulfill operational bot features, including:
+- Retaining server configurations (e.g., ticket categories, welcome channels, autoroles, and log channels).
+- Enforcing disciplinary thresholds (e.g., escalating punishments after multiple warnings).
+- Archiving closed support requests in HTML transcript format for server audit trails.
+- Generating real-time server statistics (member counts, bot ratios, and boost levels).
 
 ---
 
-## 6. Changes to This Privacy Policy
+## 4. Data Sharing & Third Parties
+- **No Commercial Sale:** We never sell, rent, monetize, or trade your data to third parties, advertisers, or external organizations.
+- **No Third-Party Access:** Data is stored locally and securely within isolated server databases, accessible only by the bot's runtime process and authorized server administrators.
 
-Caramel Project may update this Privacy Policy from time to time to reflect new features or regulatory requirements. Updates will be reflected by the "Last Updated" date at the top of this document.
+---
+
+## 5. Data Retention & Deletion Rights
+- **Retention:** Data remains stored only as long as necessary to maintain active server features or until cleared by administrators (e.g., using `/warn reset`, `/note clear`, or `/backup`).
+- **Deletion Requests:** Server Owners and individual users may request the removal of their stored data (such as warnings, notes, or tickets) by contacting bot administration or executing available reset commands. When the bot is removed (*kicked/banned*) from a guild, server configurations can be permanently purged upon request.
+
+---
+
+## 6. Policy Updates
+We may periodically update this Privacy Policy to reflect feature additions or Discord API requirements. Any changes will be documented with an updated effective date.
+
+---
+
+## 7. Contact & Inquiries
+If you have questions or concerns regarding this Privacy Policy or wish to request data deletion, please reach out to the Caramel Project developer team via your server's support channels.
+
