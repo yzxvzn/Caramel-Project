@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective Date:** November 6, 2026  
+**Effective Date:** November 8, 2026  
 **Application:** Caramel Project ("Caramel", "we", "us", or "our")
 
 By inviting, accessing, or using the Caramel Discord bot and its associated services, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not invite or use the bot in your Discord server.
@@ -8,7 +8,7 @@ By inviting, accessing, or using the Caramel Discord bot and its associated serv
 ---
 
 ## 1. Description of Service
-Caramel Project is an automated enterprise-grade utility and moderation Discord application designed to provide community administration, support ticket management with HTML transcripts, temporary voice channels, internal anti-nuke defense, automated security filters, community engagement utilities, and comprehensive server activity logging.
+Caramel Project is an automated enterprise-grade utility and moderation Discord application designed to provide community administration, support ticket management with HTML transcripts, temporary voice channels with RTC region and bitrate controls, internal anti-nuke defense, automated security filters, community engagement utilities, and comprehensive server activity logging.
 
 ---
 
@@ -21,7 +21,8 @@ When utilizing Caramel Project, you agree that you and your server members will:
 ---
 
 ## 3. Administrator Authority & Responsibilities
-- Server Administrators and authorized moderators bear full responsibility for configuring the bot's moderation modules (e.g., Honeypot traps, AutoMod filters, disciplinary punishments, and mass actions).
+- Server Administrators and authorized moderators bear full responsibility for configuring the bot's moderation modules (e.g., Honeypot traps, AutoMod filters, disciplinary punishments, and Administrator-restricted `/mass` operations).
+- Caramel Project enforces strict role-based permission separation between standard staff moderation commands and Administrator-only mass operations (`/mass`, `/channelcreate`, `/channeldelete`, `/antinuke`, `/ticket`, and `/suggest`). Server Owners are responsible for granting Discord `Administrator` permissions only to trusted personnel.
 - Caramel Project operates as a tool executing commands directed by server managers. We are not liable for accidental bans, message purges, role revocations, or channel deletions executed via administrative commands.
 
 ---
