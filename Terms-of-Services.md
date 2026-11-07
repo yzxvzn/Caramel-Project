@@ -8,7 +8,7 @@ By inviting, accessing, or using the Caramel Discord bot and its associated serv
 ---
 
 ## 1. Description of Service
-Caramel Project is an automated utility and moderation Discord application designed to provide community administration, support ticket management, temporary voice channels, automated security filters, community engagement utilities, and server activity logging.
+Caramel Project is an automated enterprise-grade utility and moderation Discord application designed to provide community administration, support ticket management with HTML transcripts, temporary voice channels, internal anti-nuke defense, automated security filters, community engagement utilities, and comprehensive server activity logging.
 
 ---
 
