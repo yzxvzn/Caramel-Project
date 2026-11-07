@@ -8,11 +8,11 @@ Caramel Project is dedicated to safeguarding the privacy of our users and commun
 ---
 
 ## 1. Information We Collect
-To provide automated moderation, support ticketing, temporary voice channels, and server management, Caramel Project processes the following standard Discord identifiers:
+To provide automated moderation, internal anti-nuke protection, support ticketing, temporary voice channels, and server management, Caramel Project processes the following standard Discord identifiers:
 
 - **Discord Identifiers:** User IDs, Guild (Server) IDs, Channel IDs, and Role IDs necessary to map configurations and execute commands.
-- **Support Ticket Data:** Ticket channel records, creator User IDs, issue categories, subjects, and generated HTML message history archives for administrative record-keeping.
-- **Moderation History:** Warning counts, disciplinary reasons, and internal moderator notes associated with specific User IDs.
+- **Support Ticket Data:** Ticket channel records, creator User IDs, issue categories, subjects, user review ratings, and generated HTML message history archives for administrative record-keeping.
+- **Security & Moderation History:** Warning counts, disciplinary reasons, internal moderator notes, and velocity threshold trackers associated with specific User IDs to prevent unauthorized mass actions.
 - **Temporary State Data:** AFK status messages, sticky message identifiers, and voice stay preferences.
 
 ---
