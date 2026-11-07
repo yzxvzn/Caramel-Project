@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** November 6, 2026  
+**Effective Date:** November 8, 2026  
 **Application:** Caramel Project ("Caramel", "we", "us", or "our")
 
 Caramel Project is dedicated to safeguarding the privacy of our users and communities. This Privacy Policy outlines what information the bot processes, how that data is stored, and your rights regarding data retention.
@@ -13,7 +13,8 @@ To provide automated moderation, internal anti-nuke protection, support ticketin
 - **Discord Identifiers:** User IDs, Guild (Server) IDs, Channel IDs, and Role IDs necessary to map configurations and execute commands.
 - **Support Ticket Data:** Ticket channel records, creator User IDs, issue categories, subjects, user review ratings, and generated HTML message history archives for administrative record-keeping.
 - **Security & Moderation History:** Warning counts, disciplinary reasons, internal moderator notes, and velocity threshold trackers associated with specific User IDs to prevent unauthorized mass actions.
-- **Temporary State Data:** AFK status messages, sticky message identifiers, and voice stay preferences.
+- **Community & Personal Utility Data:** Community suggestions submitted via interactive modal panels (including upvote/downvote counts and staff decisions) and personal timer reminders (`/remind`) scheduled for Direct Message delivery (automatically deleted from storage immediately after the reminder is triggered).
+- **Temporary State Data:** AFK status messages, sticky message identifiers, active temporary voice channel ownership/settings, and voice stay preferences.
 
 ---
 
